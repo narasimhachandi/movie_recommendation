@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import requests
-import pandas
+import pandas as pd
 
 st.title('MOVIE RECOMMENDER SYSTEM')
 
