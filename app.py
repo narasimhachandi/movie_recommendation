@@ -5,7 +5,7 @@ import pandas
 
 st.title('MOVIE RECOMMENDER SYSTEM')
 
-movies = pickle.load(open('movies.pkl','rb'))
+movies = pd.compat.pickle_compat.load('movies.pkl')
 list_of_movies = movies['title'].values
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
