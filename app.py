@@ -2,11 +2,10 @@ import streamlit as st
 import pickle
 import requests
 import pandas as pd
-from pandas import pandas.core.indexes.numeric
 
 st.title('MOVIE RECOMMENDER SYSTEM')
 
-movies = pickle.load(open('movies.pkl','rb'))
+movies = pd.read_pickle('movies.pkl')
 list_of_movies = movies['title'].values
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
