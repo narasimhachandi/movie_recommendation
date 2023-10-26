@@ -36,6 +36,7 @@ def recommend(movie):
     return recommended_movies, recommended_movies_poster
 
 if st.button('Recommend Movies'):
+    st.write('You may also like :')
     names, posters = recommend(selected_movie)
     
     col1, col2, col3, col4, col5 = st.columns(5)
