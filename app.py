@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import requests
 import pandas as pd
+from pandas import pandas.core.indexes.numeric
 
 st.title('MOVIE RECOMMENDER SYSTEM')
 
