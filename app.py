@@ -3,7 +3,7 @@ import pickle
 import requests
 import pandas as pd
 
-st.title('MOVIE RECOMMENDER SYSTEM')
+st.title('MOVIE RECOMMENDATION ENGINE')
 
 movies = pd.read_pickle('movies.pkl')
 list_of_movies = movies['title'].values
