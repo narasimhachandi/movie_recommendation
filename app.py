@@ -10,7 +10,7 @@ list_of_movies = movies['title'].values
 similarity = pd.read_pickle('similarity.pkl')
 
 selected_movie = st.selectbox(
-    'Select the movie from dropdown',
+    'Select the movie you liked from the dropdown',
     list_of_movies)
 
 def fetch_poster(movie_id):
